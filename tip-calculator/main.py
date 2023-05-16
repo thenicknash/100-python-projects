@@ -32,5 +32,6 @@ if __name__ == "__main__":
     tip_amount = bill_amount * (float(desired_tip_percentage) / 100)
     total_amount = float(bill_amount) + tip_amount
     individual_amount = round(total_amount / number_of_people, 2)
+    individual_amount = '{:.2f}'.format(individual_amount)
 
     print(f'Each person should pay: ${individual_amount}')
